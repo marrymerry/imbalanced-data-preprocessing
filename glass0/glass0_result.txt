@@ -1,0 +1,56 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.Vote -S 1 -B "weka.classifiers.rules.ZeroR " -R AVG
+Relation:     glass0
+Instances:    214
+Attributes:   10
+              RI
+              Na
+              Mg
+              Al
+              Si
+              K
+              Ca
+              Ba
+              Fe
+              Class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Vote combines the probability distributions of these base learners:
+	weka.classifiers.rules.ZeroR 
+using the 'Average' combination rule 
+
+All the models:
+
+ZeroR predicts class value: negative
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         144               67.2897 %
+Incorrectly Classified Instances        70               32.7103 %
+Kappa statistic                          0     
+Mean absolute error                      0.4408
+Root mean squared error                  0.4692
+Relative absolute error                100      %
+Root relative squared error            100      %
+Total Number of Instances              214     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.000    0.000    0.000      0.000    0.000      0.000    0.492     0.324     positive
+                 1.000    1.000    0.673      1.000    0.804      0.000    0.492     0.669     negative
+Weighted Avg.    0.673    0.673    0.453      0.673    0.541      0.000    0.492     0.556     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+   0  70 |   a = positive
+   0 144 |   b = negative
+
